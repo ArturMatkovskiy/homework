@@ -1,0 +1,100 @@
+body {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 1.71;
+     letter-spacing: 0.03em;
+     color:#212121;
+     background-color: #ffffff;
+ }
+ .link {
+    text-decoration: none;
+    color: #212121;
+}
+
+.list {
+    list-style: none;
+}{
+        box-sizing: border-box;
+    }
+
+    *,
+    *::after,
+    *::before {
+        box-sizing: inherit;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-top: 0;
+    }
+
+    .block {
+        width: 300px;
+        background: antiquewhite;
+        padding: 20px;
+        border: 2px solid red;
+        margin: 20px;
+    }
+
+    .inline {
+        width: 300px;
+        background: antiquewhite;
+        padding: 20px;
+        border: 2px solid red;
+        margin: 20px;
+    }
+
+    
+    .menu {
+        font-size: 0;
+        display: inline-flex;
+    }
+
+    .menu-item {
+        
+        background: antiquewhite;
+        padding: 10px;
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    .menu-link {
+        padding: 10px 20px;
+    }
+
+    
+    .img-wrap {
+        width: 200px;
+        background-color: rgba(226, 214, 214, 0.541);
+    }
+
+    .content {
+        background-color: azure;
+    }
+
+    
+    .section {
+        background: yellowgreen;
+    }
+
+    .container {
+        width: 1200px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section p:nth-child(n+3){color: azure;
+    }

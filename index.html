@@ -1,70 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Я сам</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/block.css" />
 </head>
+
 <body>
-<header>
-    <nav>
-        <a href=""><span>Web</span>Studio</a>
-        <ul>
-            <li><a href="">Студія</a></li>
-            <li><a href="./portfolio.html">Портфоліо</a></li>
-            <li>Контакти</li>
-        </ul>
-        <a href="info@devstudio.com">info@devstudio.com</a>
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </nav>
-</header>
- <main>
-    
+    <!-- Шапка сайта -->
+    <header>
         <nav>
-            <ul>
-      <li>УВАГА ДО ДЕТАЛЕЙ</li><h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h1></li>
-      <li>УВАГА ДО ДЕТАЛЕЙ<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h2></li>
-      <li>ПЛАНУВАННЯ<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h3></li>
-      <li>СУЧАСНІ ТЕхнології<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</h4></li>
-    </ul>
-    </nav>
-    </footer>
-    <li>ЧИМ МИ ЗАЙМАЭМОСЬ</li>
-
-    <nav>
-        <ul>
-            <img src="./images/img (8).jpg" alt="">
-            <img src="./images/img (9).jpg" alt="">
-            <img src="./images/img (10).jpg" alt="">
-        </ul>
-    </nav>
-    <ul><li>НАША КОМАНДА</li></ul>
+            <a href="./" class="logo link"><span class="logo-interactive">Web</span>Studio</a>
+            <ul class="list">
+                <li><a href="./index.html" class="link current nav-link">Студія</a></li>
+                <li><a href="./portfolio.html" class="link nav-link">Портфоліо</a></li>
+                <li><a href="" class="link nav-link">Контакти</a></li>
+            </ul>
+            <a href="mailto:info@devstudio.com" class="link contacts">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="link contacts">+38 096 111 11 11</a>
+        </nav>
+    </header>
+    <!-- Головна інформація -->
     <main>
-    <nav>
-    <ul>
-        <img src="" alt=""><h1>Ігор Дем’яненк</h1>
-        <img src="" alt=""><h2>Ігор Дем’яненко</h2>
-        <img src="" alt=""><h3>Микола Тарасов</h3>
-        <img src="" alt=""><h4>Михайло Єрмаков</h4>
-</nav>
-</main>
-<nav>
-   <ul>
-    WebStudio
-   </ul> 
-</nav>
-<nav>
-<ul>
-<li>м. Київ, пр-т Лесі Українки, 26</li>
-
-<li><a href="">info@example.com</a></li>
-
-<li><a href="<a href=" +38 099 111 11 11">+38 099 111 11 11</a>
-</li>
-</ul>
-</nav>
+        <!-- Секція герой -->
+        <section class="hero">
+            <h1 class="hero-title">Ефетивні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero-button">Замовити послугу</button>
+        </section>
     
+    <section>
+        <h2 class="visually-hidden">Наші переваги</h2>
+        <ul class="list">
+            <li>
+                <h3 class="about-us-title">Увага до деталей</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit cum doloremque
+                    corrupti sint repudiandae voluptas nulla, excepturi animi asperiores eligendi magnam
+                    vel minima dolores esse, iure modi ea! Nam, veritatis.
+                </p>
+            </li>
+            <li>
+                <h3 class="about-us-title">Пунктуальність</h3>
+                <p class="about-us-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga cumque esse quis, iure,
+                    molestiae minima dicta voluptates autem perferendis illum veniam odio dolor error?
+                    Dolorum expedita sapiente eaque eveniet quasi?
+                </p>
+            </li>
+            <li>
+                <h3 class="about-us-title">Планування</h3>
+                <p class="about-us-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. In nobis officiis quam
+                    aliquam, vitae possimus accusamus, inventore quo porro ipsam praesentium corrupti
+                    obcaecati eius numquam nostrum placeat beatae sunt minus?
+                </p>
+            </li>
+            <li>
+                <h3 class="about-us-title">Сучасні Технології</h3>
+                <p class="about-us-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam accusamus, ut tempore
+                    asperiores repellendus qui beatae debitis esse at, laboriosam doloribus eum facilis
+                    molestiae, vel aliquam corrupti. Iure, nemo aut.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-title">Чим ми займаємося</h2>
+        <ul class="list">
+            <li>
+                <img src="./images/img (10).jpg" alt="Планшет на столі" width="370" />
+            </li>
+            <li><img src="./images/img (27).jpg" alt="Телефон" width="370" /></li>
+            <li>
+                <img src="./images/img (28).jpg" alt="Діаграма кольру на планшеті" width="370" />
+            </li>
+        </ul>
+    </section>
+    <!-- Наша команда -->
+    <section class="our-team">
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="list-team list">
+            <li>
+                <img src="./images/img (14).jpg" alt="Product Designer" width="270" />
+                <h3 class="team-title">Ігор Дем’яненко</h3>
+                <p>Product Designer</p>
+            </li>
+            <li>
+                <img src="./images/img (15).jpg" alt="Frontend Developer" width="270" />
+                <h3 class="team-title">Ольга Репіна</h3>
+                <p>Frontend Developer</p>
+            </li>
+            <li>
+                <img src="./images/img (16).jpg" alt="Marketing" width="270" />
+                <h3 class="team-title">Микола Тарасов</h3>
+                <p>Marketing</p>
+            </li>
+            <li>
+                <img src="./images/img (17).jpg" alt="UI Designer" width="270" />
+                <h3 class="team-title">Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+            </li>
+        </ul>
+    </section>
+    <footer class="bg-footer">
+        <nav>
+            <a href="./" class="logo-footer link"><span class="logo-interactive">Web</span>Studio</a>
+        </nav>
+        <address>
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+    
+            <a href="mailto:info@devstudio.com" class="link footer-contacts">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a>
+        </address>
+    </footer>
+    </main>
+    </body>
+    
+    </html>
 
    
  </main>
