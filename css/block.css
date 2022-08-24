@@ -1,100 +1,276 @@
 body {
-     font-family: 'Roboto', sans-serif;
-     font-weight: 400;
-     font-size: 14px;
-     line-height: 1.71;
-     letter-spacing: 0.03em;
-     color:#212121;
-     background-color: #ffffff;
- }
- .link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background-color: #ffffff;
+}
+
+.link {
     text-decoration: none;
     color: #212121;
+    font-style: normal;
+
 }
 
 .list {
     list-style: none;
-}{
-        box-sizing: border-box;
-    }
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
 
-    *,
-    *::after,
-    *::before {
-        box-sizing: inherit;
-    }
+html {
+    box-sizing: border-box;
+}
 
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        margin-top: 0;
-    }
+.wraper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
 
-    .block {
-        width: 300px;
-        background: antiquewhite;
-        padding: 20px;
-        border: 2px solid red;
-        margin: 20px;
-    }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-    .inline {
-        width: 300px;
-        background: antiquewhite;
-        padding: 20px;
-        border: 2px solid red;
-        margin: 20px;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+   
+}
 
-    
-    .menu {
-        font-size: 0;
-        display: inline-flex;
-    }
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
 
-    .menu-item {
-        
-        background: antiquewhite;
-        padding: 10px;
-        margin: 0px;
-        font-size: 24px;
-    }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .menu-link {
-        padding: 10px 20px;
-    }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
-    
-    .img-wrap {
-        width: 200px;
-        background-color: rgba(226, 214, 214, 0.541);
-    }
+/* header */
+.boarder {
+    border-bottom: 1px solid #ECECEC;
+}
 
-    .content {
-        background-color: azure;
-    }
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
 
-    
-    .section {
-        background: yellowgreen;
-    }
+.logo-interactive {
+    color: #000000;
+}
 
-    .container {
-        width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .section p:nth-child(n+3){color: azure;
-    }
+.nav-link {
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+/* секція герой */
+.hero {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.hero-button {
+display: block;
+    margin: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 200px;
+    color: #ffffff;
+    background-color: #2196f3;
+    ;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #2196F3;
+}
+
+
+/* Наші переваги */
+.about-us-title {
+    padding-top:80px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.about-us-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    color: #212121;
+}
+
+/* Наша команда */
+.our-team {
+    background-color: #F5F4FA;
+}
+
+.list-team {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    background: #FFFFFF;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.team-info {
+    padding-top: 30px;
+    padding bottom: 30px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+/* портволіо */
+.filter-menu .button-menu {
+    background: #f5f4fa;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    border: transparent;
+    cursor: pointer;
+}
+
+.button-menu:hover,
+.button-menu:focus {
+    color: #ffffff;
+    background-color: #2196f3;
+}
+
+.projects-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.project-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.description {
+    background: #FFFFFF;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+description:hover,
+.description:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
