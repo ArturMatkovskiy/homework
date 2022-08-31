@@ -19,8 +19,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 html {
@@ -34,6 +32,7 @@ html {
 }
 
 .wraper{
+    display: inline-block;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
@@ -52,8 +51,9 @@ h3,
 h4,
 h5,
 h6,
-p {
-   
+p,
+ul {
+   margin-top: 0;
 }
 
 .visually-hidden {
@@ -96,11 +96,11 @@ p {
     color: #2196F3;
 }
 
-.logo-interactive {
-    color: #000000;
+.logo-interactive{
+    color: #212121;
 }
 
-.nav-link {
+.nav-link {     
     margin-left: 40px;
     font-style: normal;
     font-weight: 500;
@@ -186,6 +186,13 @@ display: block;
     /* or 171% */
     color: #212121;
 }
+/* наші переваги */
+.item {
+    margin-left: 10px;
+    margin-top: 10px;
+    flex-basis: calc((100% - 30px) / 3);
+}
+
 
 /* Наша команда */
 .our-team {
@@ -224,11 +231,24 @@ display: block;
 }
 
 /* портволіо */
+.filter-menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-menu>.item:not(:last-child) {
+    margin-right: 8px;
+}
+
+
+
+
 .filter-menu .button-menu {
     background: #f5f4fa;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    font-size: 17px;
+    line-height: 1.64;
     text-align: center;
     border: transparent;
     cursor: pointer;
@@ -240,37 +260,88 @@ display: block;
     background-color: #2196f3;
 }
 
-.projects-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
-    letter-spacing: 0.06em;
-    color: #212121;
+.img_cont{
+    margin: auto;
+    width: 1170;
+    display: flex;
+    justify-content: space-between;
 }
 
-.project-paragraph {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    letter-spacing: 0.03em;
-    color: #757575;
+.intro_img{
+    margin-top: 50px;
+    display: inline-block;
+    margin-bottom: ;
 }
 
-.description {
-    background: #FFFFFF;
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+/* footer*/
+.bg-footer{
+    padding-top: 60px;
+        padding-bottom: 60px;
+    
+        background: #2F303A
 }
 
-description:hover,
-.description:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+.logo-footer{
+color: #ECECEC;
 }
+
+
+.logo-interactivee{
+color: #2196F3;
+}
+
+
+.address{
+    color: #ECECEC;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+  width: 30%;  
+}
+
+@media screen and (max-width:600px) {
+    width: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px; ) {
+    width: 30%;
+    input{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px;) {
+width: 30%;
+}
+
+@media screen and (max-width: 600px; ) {
+    width: 48%;
+}
+
+
+
+
+
