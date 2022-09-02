@@ -16,6 +16,8 @@ body {
 }
 
 .list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -31,13 +33,13 @@ html {
     box-sizing: inherit;
 }
 
-.wraper{
+/* .wraper{
     display: inline-block;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
     padding-bottom: 50px;
-}
+} */
 
 img {
     display: block;
@@ -86,6 +88,8 @@ ul {
 }
 
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -96,8 +100,32 @@ ul {
     color: #2196F3;
 }
 
+
+.menu{
+   display: flex;
+    margin-left: 94px;
+}
+
+.menu > .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.topconracts{
+   display: flex;
+   margin-left: auto; 
+}
+
+.topconracts > .item:not(:last-child){
+    margin-right: 30px;
+}
+
 .logo-interactive{
-    color: #212121;
+    color: #2196F3;
+}
+
+.navv{
+    display: flex;
+align-items: center;
 }
 
 .nav-link {     
@@ -151,7 +179,6 @@ display: block;
     min-width: 200px;
     color: #ffffff;
     background-color: #2196f3;
-    ;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -237,8 +264,17 @@ display: block;
     margin-bottom: 50px;
 }
 
-.filter-menu>.item:not(:last-child) {
-    margin-right: 8px;
+
+
+
+.button-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8px;
+}
+
+.current{
+    color:#2196f3 ;
 }
 
 
@@ -286,8 +322,9 @@ color: #ECECEC;
 }
 
 
-.logo-interactivee{
-color: #2196F3;
+
+.logo-in{
+color: #4383b8;
 }
 
 
