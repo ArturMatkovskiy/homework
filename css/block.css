@@ -77,6 +77,20 @@ ul {
     margin-right: auto;
 }
 
+.our-work-list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.our-work-list>.item {
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -129,7 +143,6 @@ align-items: center;
 }
 
 .nav-link {     
-    margin-left: 40px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -159,6 +172,8 @@ align-items: center;
 }
 
 .hero-title {
+    margin: 0 auto 30px;
+        max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -174,6 +189,7 @@ align-items: center;
 .hero-button {
 display: block;
     margin: auto;
+    padding: 10px 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     min-width: 200px;
@@ -205,6 +221,20 @@ display: block;
     color: #212121;
 }
 
+
+.about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.about-us-list>.item {
+    flex-basis: calc((100% - 30px * 4) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .about-us-title {
     font-style: normal;
     font-weight: 400;
@@ -213,12 +243,7 @@ display: block;
     /* or 171% */
     color: #212121;
 }
-/* наші переваги */
-.item {
-    margin-left: 10px;
-    margin-top: 10px;
-    flex-basis: calc((100% - 30px) / 3);
-}
+
 
 
 /* Наша команда */
@@ -250,6 +275,7 @@ display: block;
 .section-title {
     font-weight: 700;
     font-size: 36px;
+    margin-bottom: 50px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -262,6 +288,9 @@ display: block;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+}
+.logo-interactive{
+ color: #212121;   
 }
 
 
