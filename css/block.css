@@ -163,13 +163,19 @@ align-items: center;
 
 /* секція герой */
 .hero {
-    margin: auto;
-    width: 1200px;
-    display: flex;
-    align-items: center;
-    height: 500px;
-    background: #2F303A;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png);
+    background-color: var(--hero-footer-background);
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 
 .hero-title {
     margin: 0 auto 30px;
@@ -244,6 +250,17 @@ display: block;
     color: #212121;
 }
 
+.about-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 
 
 /* Наша команда */
@@ -282,7 +299,37 @@ display: block;
 
     color: #212121;
 }
+/*ПОСТІЙНІ КЛІЄНТИ  */
 
+.list-client{
+display: flex;
+flex-wrap: wrap;
+margin-top: -30px;
+    margin-left: -30px;
+}
+
+
+.link-client < .item{
+flex-basis:calc((100% - 30px * 6) / 6) ;
+margin-top: 30px;
+margin-left: 30px;
+}
+
+.icon-client{
+display: flex;
+justify-content: center;
+align-items: center;
+width:170px;
+height:90px;
+border: 1px solid #AFB1BB;
+fill: #AFB1B8;
+}
+
+.icon-client:hover,
+.link-client:focus{
+border: 1px solid var(--accent-color) ;
+fill: var(--accent-color);
+}
 /* портволіо */
 .filter-menu{
     display: flex;
