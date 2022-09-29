@@ -427,13 +427,6 @@ color: #4383b8;
 
 
 
-@media screen and (max-width:800px){
-  width: 30%;  
-}
-
-@media screen and (max-width:600px) {
-    width: 48%;
-}
 
 
 
@@ -443,26 +436,6 @@ color: #4383b8;
 
 
 
-
-
-
-
-
-@media screen and (max-width: 980px; ) {
-    width: 30%;
-    input{
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 800px;) {
-width: 30%;
-}
-
-@media screen and (max-width: 600px; ) {
-    width: 48%;
-}
 
 
 
