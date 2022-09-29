@@ -332,10 +332,11 @@ width:170px;
 height:90px;
 border: 1px solid #AFB1BB;
 fill: #AFB1B8;
+border-radius: 4px;
 }
 
-.icon-client:hover,
-.link-client:focus{
+.list-client >.item:hover,
+.list-client >.item:focus{
 border: 1px solid var(--accent-color) ;
 fill: var(--accent-color);
 }
